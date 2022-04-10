@@ -95,7 +95,7 @@ body {
  }
   /* h2наша команда в ul */
 
-.list { 
+.list-section { 
 
   margin: 0;
   padding: 0;
@@ -103,11 +103,21 @@ body {
 }
 
 
-/* чем мы занимаеммя */
-.list{
-  padding-top: 50px;
 
+/* задачя организации */
+.list-body{
+  padding-top: 94px;
+  display: flex;
+  
+  
 }
+.list-body .aside+ .aside{
+  margin-left: 30px;
+}
+.list-body .aside{
+  width: 270px;
+}
+
 
 /* .site-nav .list{
  background-color: tomato;
@@ -132,15 +142,16 @@ body {
 .site-nav {
   display: flex;
   margin-left: 93px;
+
 }
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
  } 
  /* ul contact  header*/
- .text .link{
-   
+   .text .link{
   
   color: var(--title-text-paragraph);
     
@@ -148,8 +159,7 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   text-decoration: none;
-
- }
+   }
 
  .text .link:hover, 
  .text .link:focus{
@@ -171,8 +181,8 @@ body {
   }
  
  
- /* section 2-4 ul list */
-.list p {
+ /* задача организации */
+.list-body p {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-paragraph);
@@ -181,13 +191,38 @@ body {
     font-size: 14px;
     line-height: 1.7; 
     }
- .list-section p { 
+.list-body h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 
+/* h3 наша команда */
+.list .list-title {
+  color: var(--primary-text-color);
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18px;
+}
+
+.list-section p { 
+  margin-top: 0;
+  margin-bottom: 0;
+   color: var(--title-text-paragraph);
    margin-top: 10px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.19;
-    }
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.19;
+  }
+
+
+
 /* hero */
 .hero-title {
   margin-top: 0;
@@ -219,25 +254,7 @@ body {
   line-height: 1.6;
   text-align: center;
 }
-/* section 2-4 ul list  абзацы h3*/
-.list h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-color: var(--primary-text-color);
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-}
-/* h3 в section чем мы занемаемся */
-.list .list-title {
-color: var(--primary-text-color);
-margin-top: 30px;
-margin-bottom: 0px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18px;
-}
+
 
    /* button */
 .button {
