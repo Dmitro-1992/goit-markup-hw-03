@@ -17,30 +17,57 @@
    --logo-footer-color:#FFFFFF;
    --address-footer-color:#F5F4FA;
 }
-
+html {
+  box-sizing: border-box;
+}
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
 body {
-    background-color: var(--logo-footer-color);
-    color: var(--primary-text-color);
+  margin: 0;
+  background-color: var(--logo-footer-color);
+  color: var(--primary-text-color);
 
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.02em;
-    font-size: 14;
-    }
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 14;
+}
+.conteiner-nav {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-      width: 1230 px;
-      outline: tomato;
-    }
-     
+}
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+   outline: 2px solid red; 
+}
+.section {
+  padding-top: 94;
+  padding-bottom: 94;
+} 
+.section .no-padding{
+  padding-top: 0;
+  padding-bottom: 0;
+}
   /* logo */
 
  .logo{
-   color: var(--logo-nav-color);
-   font-family: Raleway, sans-serif;
 
-   font-weight: 700;
+  color: var(--logo-nav-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: 700;
   font-size: 26px;
   line-height: 2.4;
   font-size: normal;
@@ -68,74 +95,126 @@ body {
  }
   /* h2наша команда в ul */
 
-.list {
+.list { 
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-/* сайт nav */
-.site-nav .link{
-    color: var(--primary-text-color);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    text-decoration: none;
+
+/* чем мы занимаеммя */
+.list{
+  padding-top: 50px;
+
+}
+
+/* .site-nav .list{
+ background-color: tomato;
+} */
+.site-nav .list+ .list{
+  margin-left: 50px;
+
+
+}
+
+.site-nav .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
    
+}
+/* сайт nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
  } 
- /* ul contact */
+ /* ul contact  header*/
  .text .link{
-    color: var(--title-text-paragraph);
+   
+  
+  color: var(--title-text-paragraph);
     
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
-    text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-decoration: none;
 
  }
- .text .link:hover,
+
+ .text .link:hover, 
  .text .link:focus{
    color: var(--accent-color);
  }
+
+ .text{
+   display: flex;
+   margin-left: auto;
+   
+ }
+ .text .list + .list{
+   margin-left: 50px;
+ }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+  }
  
  
  /* section 2-4 ul list */
 .list p {
-    color: var(--title-text-paragraph);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--title-text-paragraph);
 
-    font-weight: 400;
+   font-weight: 400;
     font-size: 14px;
     line-height: 1.7; 
     }
- .list-section p{
+ .list-section p { 
+
+   margin-top: 10px;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.19;
     }
 /* hero */
 .hero-title {
-    color: var(--address-footer-color);
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--address-footer-color);
 
     font-weight: 400;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
-  
 }
 
-/* works  фон*/
+.hero{
+  text-align: center;
+}
+ /* works  фон */
 
- /* .works{
-   background-color: var(--primary-text-color);
-
-}  */       
+  /* .works{
+   background-color: var(--logo-nav-color);
+}    */
 
 
 /* заголовки h2 */
 .section-title{
+  margin-bottom: 50px;
+  margin-top: 0;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -144,6 +223,8 @@ body {
 }
 /* section 2-4 ul list  абзацы h3*/
 .list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
 color: var(--primary-text-color);
 font-weight: 700;
 font-size: 14px;
@@ -153,7 +234,8 @@ text-transform: uppercase;
 /* h3 в section чем мы занемаемся */
 .list .list-title {
 color: var(--primary-text-color);
-
+margin-top: 30px;
+margin-bottom: 0px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18px;
@@ -161,15 +243,22 @@ line-height: 1.18px;
 
    /* button */
 .button {
+  display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 136px;
     color: var(--address-footer-color);
     background-color:var(--accent-color);
-
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    text-align: center;
+    letter-spacing: 0.06em;
+    
    }
-
+  .button:hover,
+  .button:focus {
+  background-color: #188CE8;
+  }
 /* ПОРТФОЛИО */
 .portfolio-title {
   display: none;
