@@ -16,7 +16,9 @@
    --logo-nav-color:#000000;
    --logo-footer-color:#FFFFFF;
    --address-footer-color:#F5F4FA;
+   --h1-color:#2F303A;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -38,7 +40,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   padding-left: 15px;
   padding-right: 15px;
 
@@ -50,9 +52,9 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 
-   outline: 2px solid red; 
+   /* outline: 2px solid red;  */
 }
-.section {
+.section{
   padding-top: 94;
   padding-bottom: 94;
 } 
@@ -69,7 +71,7 @@ body {
 
   font-weight: 700;
   font-size: 26px;
-  line-height: 2.4;
+  line-height: 1.19;
   font-size: normal;
   text-decoration: none;
  }
@@ -79,11 +81,13 @@ body {
 }
 /* логин в футаре */
 .active .logo{
+  margin-bottom: 20px;
+  display: block;
   color: var(--logo-footer-color);
   font-family: Raleway, sans-serif;
 
   font-size: 26px;
-  line-height: 2.4;
+  line-height:1.19;
   font-size: normal;
   }
   /* футер адрес */
@@ -93,6 +97,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
  }
+
+  .address {
+    flex-direction: column;
+  }
+  
+  .section-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+  }
   /* h2наша команда в ul */
 
 .list-section { 
@@ -174,12 +188,11 @@ body {
  .text .list + .list{
    margin-left: 50px;
  }
-  ul {
+    ul {
     margin: 0;
     padding: 0;
     list-style: none
-  }
- 
+  } 
  
  /* задача организации */
 .list-body p {
@@ -220,11 +233,27 @@ body {
    font-size: 16px;
    line-height: 1.19;
   }
-
-
+  /* чем мы занимаемся  */
+.list-content {
+display: flex;
+}
+.list-content .item+ .item{
+  margin-left: 30px;
+}
+.list-section{
+  display: flex;
+}
+.list-section {
+justify-content: space-between;
+}
+/* наша команда */
+ 
 
 /* hero */
 .hero-title {
+  background-color: var(--h1-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--address-footer-color);
@@ -237,17 +266,16 @@ body {
 .hero{
   text-align: center;
 }
- /* works  фон */
 
-  /* .works{
+ /* .works{
    background-color: var(--logo-nav-color);
-}    */
+ } */
 
 
 /* заголовки h2 */
 .section-title{
   margin-bottom: 50px;
-  margin-top: 0;
+  margin-top: 94px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
