@@ -286,7 +286,11 @@ display: flex;
 justify-content: space-between;
 }
 /* наша команда */
- 
+
+ .thumb{
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
 
 /* hero */
 .hero-title {
@@ -356,9 +360,23 @@ justify-content: space-between;
 .title-text{
   padding-bottom: 94px;
   padding-top: 94px;
+
 }
+.filter-text {
+  padding-bottom: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.filter-text .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+
+
+
 /* button */
-.filtres .btn-main .btn{
+.filter-text.btn-main .blockquote-button{
 color:var(--primary-text-color);
 background-color: var(--address-footer-color);
 
@@ -368,39 +386,36 @@ line-height: 26px;
 letter-spacing: 0.03em;
 
 }
-.filtres .btn-main .btn:hover,
-.filtres .btn-main .focus{
+.filter-text .btn-main .blockquote-button:hover,
+.filter-text.btn-main .blockquote-button:focus{
   color:var(--logo-footer-color);
   background-color: var(--accent-color);
   
 }
-.filtres .btn-main{
+.filter-text .btn-main{
   list-style: none;
 }
 
 /* h2 */
 .headline{
   margin-top: 0;
+  margin-bottom: 4px;
   color:var(--primary-text-color);
 
   font-weight: 700;
   font-size: 18px;
-  line-height:2;
+  line-height: 2;
   letter-spacing: 0.06em;
   list-style: none;
-  margin-bottom: 4px;
-  
 }
 /* p */
  .projects-title{
   color: var(--title-text-paragraph);
-  margin-bottom: 0;
+  margin-bottom:0;
   margin-top: 0;
-
   font-size: 16px;
   line-height: 1.87px;
-  letter-spacing: 0.03;
-   list-style: none; 
+  
 }
 
 .projects-list .link-title {
@@ -417,18 +432,16 @@ list-style: none
   margin-left: auto;
   margin-right: auto;
 }  
-.flex-container{
-  
-  display: flex;
-  flex-wrap: wrap;
+ /* .test-container{
+ display: flex;
+flex-wrap: wrap;
+} */
+
   /* background-color: teal; */
- 
-}
-.projects-list{
   
-  
+  .projects-list{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   /* background-color: tomato; */
 } 
 .projects-list-text {
@@ -443,9 +456,24 @@ width: 380px;
  .projects-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.projects-list-text .flex-container{
+.projects-list-text .main{
   padding: 20px 24px;
-  /* border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee; */
-}
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid  #eeeeee;
+  border-right: 1px solid #eeeeee
+}  
+ .blockquote-button{
+  min-width: 73px;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+ }
+ .filter-text.btn-main:not(:last-child){
+    margin-right: 8px;
+  }
