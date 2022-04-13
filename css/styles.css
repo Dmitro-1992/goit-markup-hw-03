@@ -55,18 +55,16 @@ body {
 
    /* outline: 2px solid red;  */
 }
- .section-no-podding{
+ .section .no-podding {
   padding-top: 0;
   padding-bottom: 0;
+ 
 } 
-.section{
-  padding-top: 94;
-  padding-bottom: 94;
-} 
-.section {
+  /* padding-top: 94; *
+/* .section {
 margin-bottom: 0;
 margin-top: 0%;
-}
+}  */
 
   /* logo */
 
@@ -253,44 +251,61 @@ margin-top: 0%;
 }
 
 /* h3 наша команда */
-.list .list-title {
+.list-aside .list-title {
+  margin-top: 0;
+  text-align: center;
   color: var(--primary-text-color);
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  /* margin-bottom: 0px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18px;
 }
+.list-aside img{
+  margin-top: o;
+  margin-bottom: o;
+}
 
 .list-section p { 
-  padding-bottom: 94px;
-  margin-top: 0;
+  text-align: center;
+  margin-top: 10px;
   margin-bottom: 0;
    color: var(--title-text-paragraph);
-   margin-top: 10px;
-   font-weight: 400;
+   /* margin-top: 10px; */
    font-size: 16px;
    line-height: 1.19;
   }
+  .thumb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+.list-aside{
+  background: var(--logo-footer-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-list {
+  background-color:#F5F4FA;
+}
+
   /* чем мы занимаемся  */
 .list-content {
 display: flex;
+text-align: center;
+
 }
 .list-content .item+ .item{
   margin-left: 30px;
 }
 .list-section{
   display: flex;
+  padding-bottom: 94px;
 }
 .list-section {
 justify-content: space-between;
 }
-/* наша команда */
-
- .thumb{
-  padding-top: 30px;
-  padding-bottom: 30px;
- }
 
 /* hero */
 .hero-title {
@@ -333,7 +348,7 @@ justify-content: space-between;
 }
 
    /* button */
-.button {
+  .button {
     display: inline-block;
 
     border-radius: 4px;
@@ -354,10 +369,14 @@ justify-content: space-between;
   }
 
 /* ПОРТФОЛИО */
+
+.l
+/* кнопки ul */
 .portfolio-title {
   display: none;
 }
 .title-text{
+  background-color: #E5E5E5;
   padding-bottom: 94px;
   padding-top: 94px;
 
@@ -390,11 +409,8 @@ letter-spacing: 0.03em;
 .filter-text.btn-main .blockquote-button:focus{
   color:var(--logo-footer-color);
   background-color: var(--accent-color);
-  
 }
-.filter-text .btn-main{
-  list-style: none;
-}
+
 
 /* h2 */
 .headline{
@@ -460,7 +476,7 @@ width: 380px;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid  #eeeeee;
-  border-right: 1px solid #eeeeee
+  border-right: 1px solid #eeeeee;
 }  
  .blockquote-button{
   min-width: 73px;
@@ -474,6 +490,6 @@ width: 380px;
   text-align: center;
   letter-spacing: 0.03em;
  }
- .filter-text.btn-main:not(:last-child){
+ .filter-text .btn-main:not(:last-child){
     margin-right: 8px;
   }
