@@ -103,19 +103,23 @@ margin-top: 0%;
   .address{
    margin-bottom: 9px;
    color: var(--address-footer-color);
-   font-family: Roboto,slab;
+   font-family: Roboto,normal;
   font-size: 14px;
   line-height: 1.71;
    }
-   .address>li:hove,
+   .address>li:hove,  
    .address>li:focus {
     color: #2196F3;
    }
 
   .address{
    flex-direction: column;
+   font-style: normal;
   } 
-  
+  .address>li:not(:last-child){
+   display: block;
+  }
+
   .section-footer {
     padding-top: 60px;
     padding-bottom: 60px;
